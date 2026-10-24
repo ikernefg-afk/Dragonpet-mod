@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "dragonegg",
+  "version": "${version}",
+  "name": "Dragones Elementales",
+  "description": "Encuentra un huevo de dragón, elige su elemento y cría un dragón inmortal que te ayuda.",
+  "authors": ["Tú"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.dragonegg.DragonEggMod"],
+    "client": ["com.dragonegg.client.DragonEggClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

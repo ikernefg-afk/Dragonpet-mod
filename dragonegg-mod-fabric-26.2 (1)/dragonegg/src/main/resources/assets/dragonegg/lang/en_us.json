@@ -1,0 +1,11 @@
+{
+  "block.dragonegg.elemental_egg": "Elemental Dragon Egg",
+  "item.dragonegg.elemental_egg": "Elemental Dragon Egg",
+  "entity.dragonegg.dragon": "Elemental Dragon",
+  "screen.dragonegg.title": "Choose your dragon's element",
+  "element.dragonegg.fire": "Fire",
+  "element.dragonegg.water": "Water",
+  "element.dragonegg.plant": "Plant",
+  "element.dragonegg.rock": "Rock",
+  "screen.dragonegg.name_hint": "Your dragon's name (optional)"
+}
