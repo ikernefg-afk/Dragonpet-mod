@@ -12,6 +12,6 @@ public class DragonEggClient implements ClientModInitializer {
 		// Cuerpo de prueba: el render del loro (cambiar luego por el modelo de dragón)
 		EntityRendererRegistry.register(DragonEggMod.DRAGON, ParrotRenderer::new);
 
-		DragonEggMod.OPEN_SCREEN = () -> Minecraft.getInstance().setScreen(new ElementScreen());
+		DragonEggMod.OPEN_SCREEN = () -> Minecraft.getInstance().setScreenAndShow((new ElementScreen());
 	}
 }
