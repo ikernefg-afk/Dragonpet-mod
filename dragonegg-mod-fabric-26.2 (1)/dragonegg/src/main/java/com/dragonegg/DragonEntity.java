@@ -53,7 +53,7 @@ public class DragonEntity extends Parrot {
 
 	public DragonEntity(EntityType<? extends DragonEntity> type, Level level) {
 		super(type, level);
-	}
+	setVariant(element.variant);}
 
 	public static AttributeSupplier.Builder createDragonAttributes() {
 		return Parrot.createAttributes()
