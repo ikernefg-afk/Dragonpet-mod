@@ -3,7 +3,6 @@ package com.dragonegg.client;
 import com.dragonegg.ChooseElementPayload;
 import com.dragonegg.Element;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.Screen;
@@ -40,11 +39,5 @@ public class ElementScreen extends Screen {
 					.bounds(x, top + 55 + i * (h + gap), w, h)
 					.build());
 		}
-	}
-
-	@Override
-	public void render(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
-		super.render(graphics, mouseX, mouseY, delta);
-		graphics.drawCenteredString(this.font, this.title, this.width / 2, this.height / 2 - 82, 0xFFFFFFFF);
 	}
 }
