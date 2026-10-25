@@ -3,6 +3,9 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: "dragonegg-mod-fabric-26.2 (1)/dragonegg"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -16,4 +19,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: mod
-          path: build/libs/
+          path: "dragonegg-mod-fabric-26.2 (1)/dragonegg/build/libs/"
