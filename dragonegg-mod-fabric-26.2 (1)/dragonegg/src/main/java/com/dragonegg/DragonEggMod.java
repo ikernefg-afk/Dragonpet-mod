@@ -70,7 +70,7 @@ public class DragonEggMod implements ModInitializer {
 				ResourceKey.create(Registries.PLACED_FEATURE, id("elemental_egg")));
 
 		// Paquete: el jugador eligió elemento
-		PayloadTypeRegistry.playC2S().register(ChooseElementPayload.TYPE, ChooseElementPayload.CODEC);
+		PayloadTypeRegistry.serverboundPlay().register(ChooseElementPayload.TYPE, ChooseElementPayload.CODEC);
 		ServerPlayNetworking.registerGlobalReceiver(ChooseElementPayload.TYPE, (payload, context) ->
 				hatch(context.player(), Element.byIndex(payload.element()), payload.name()));
 	}
